@@ -4,6 +4,7 @@
 
 import UIKit
 import AudioKit
+import AudioKitUI
 
 class MIDIInstrumentViewController: UIViewController {
 
@@ -35,7 +36,7 @@ class MIDIInstrumentViewController: UIViewController {
     
     setUpOctaveControl()
   
-    view.addSubview(voiceSelectorView!)
+    //view.addSubview(voiceSelectorView!)
 
     loadVoices()
     // show the names of the voices while they are loading
@@ -49,12 +50,12 @@ class MIDIInstrumentViewController: UIViewController {
   // work around for when some devices only play through the headphone jack
   func setSpeakersAsDefaultAudioOutput() {
     do {
-      try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord, with: AVAudioSessionCategoryOptions.defaultToSpeaker)
+      try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord, options: AVAudioSession.CategoryOptions.defaultToSpeaker)
     }
     catch {
       // hard to imagine how we'll get this exception
-      let alertController = UIAlertController(title: "Speaker Problem", message: "You may be able to hear sound using headphones.", preferredStyle: UIAlertControllerStyle.alert)
-      let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
+      let alertController = UIAlertController(title: "Speaker Problem", message: "You may be able to hear sound using headphones.", preferredStyle: UIAlertController.Style.alert)
+      let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
         (result: UIAlertAction) -> Void in
       }
       
@@ -121,7 +122,7 @@ class MIDIInstrumentViewController: UIViewController {
         // don't let the user choose a voice until they finish loading
         self.voiceSelectorView?.setShowVoices(show: true)
         // don't let the user use the sequencer until the voices are loaded
-        self.setUpSequencer()
+//        self.setUpSequencer()
       }
     }
   }

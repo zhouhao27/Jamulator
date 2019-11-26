@@ -53,7 +53,7 @@ class AudioCommon
   // In the simulator this takes a long time, so we
   //  call it in a background thread in the controller
   func loadSoundFont() {
-    var bankURL = Bundle.main.url(forResource: "FluidR3_GM", withExtension: "sf2")
+    var bankURL = Bundle.main.url(forResource: "piano", withExtension: "sf2")
     checkError(osstatus: AudioUnitSetProperty(synthUnit!, AudioUnitPropertyID(kMusicDeviceProperty_SoundBankURL), AudioUnitScope(kAudioUnitScope_Global), 0, &bankURL, UInt32(MemoryLayout<URL>.size)))
   }
   

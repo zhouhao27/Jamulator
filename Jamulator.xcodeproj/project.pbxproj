@@ -19,12 +19,11 @@
 		3621D2991F2FEFEE00E07518 /* SoundError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3621D2981F2FEFEE00E07518 /* SoundError.swift */; };
 		3621D29E1F31431900E07518 /* VoiceSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3621D29D1F31431900E07518 /* VoiceSelectorView.swift */; };
 		3621D2A71F33FB4E00E07518 /* SoftSynth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3621D2A61F33FB4E00E07518 /* SoftSynth.swift */; };
-		363B17911F5781A30067AB52 /* FluidR3_GM.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 363B17901F5781A30067AB52 /* FluidR3_GM.sf2 */; };
 		369035641F3E755A00E72EDB /* VoiceSelectorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369035631F3E755A00E72EDB /* VoiceSelectorButton.swift */; };
 		369035671F3FBF1000E72EDB /* VoiceCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369035661F3FBF1000E72EDB /* VoiceCategoryButton.swift */; };
 		3690358D1F43A77200E72EDB /* ScreenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3690358C1F43A77000E72EDB /* ScreenUtils.swift */; };
-		36DA47311F50C6A300AE58EE /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36DA47301F50C6A300AE58EE /* AudioKit.framework */; };
-		36DA47321F50C6A300AE58EE /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36DA47301F50C6A300AE58EE /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9CE2F606FD5F8D63BEDAC88D /* Pods_Jamulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB679D57050E3192BB4D0D3 /* Pods_Jamulator.framework */; };
+		DA99ABAD238D2FE300DD25D9 /* piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = DA99ABAC238D2FE300DD25D9 /* piano.sf2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +33,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				36DA47321F50C6A300AE58EE /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +49,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0DF251361E9B9103D89D12BC /* Pods-Jamulator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jamulator.debug.xcconfig"; path = "Target Support Files/Pods-Jamulator/Pods-Jamulator.debug.xcconfig"; sourceTree = "<group>"; };
+		10E9F9B6A128E49E4006BB7C /* Pods-Jamulator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jamulator.release.xcconfig"; path = "Target Support Files/Pods-Jamulator/Pods-Jamulator.release.xcconfig"; sourceTree = "<group>"; };
+		1EB679D57050E3192BB4D0D3 /* Pods_Jamulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jamulator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3616ECE01F61E9A300906228 /* AudioCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCommon.swift; sourceTree = "<group>"; };
 		3616ECE21F61EA0B00906228 /* Sequencer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequencer.swift; sourceTree = "<group>"; };
 		3621D2501F2FA19A00E07518 /* Jamulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jamulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,11 +66,10 @@
 		3621D2981F2FEFEE00E07518 /* SoundError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundError.swift; sourceTree = "<group>"; };
 		3621D29D1F31431900E07518 /* VoiceSelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceSelectorView.swift; sourceTree = "<group>"; };
 		3621D2A61F33FB4E00E07518 /* SoftSynth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoftSynth.swift; sourceTree = "<group>"; };
-		363B17901F5781A30067AB52 /* FluidR3_GM.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FluidR3_GM.sf2; sourceTree = "<group>"; };
 		369035631F3E755A00E72EDB /* VoiceSelectorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceSelectorButton.swift; sourceTree = "<group>"; };
 		369035661F3FBF1000E72EDB /* VoiceCategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCategoryButton.swift; sourceTree = "<group>"; };
 		3690358C1F43A77000E72EDB /* ScreenUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenUtils.swift; sourceTree = "<group>"; };
-		36DA47301F50C6A300AE58EE /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		DA99ABAC238D2FE300DD25D9 /* piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = piano.sf2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36DA47311F50C6A300AE58EE /* AudioKit.framework in Frameworks */,
 				3621D2681F2FB11900E07518 /* CoreAudio.framework in Frameworks */,
 				3621D2691F2FB11900E07518 /* CoreMIDI.framework in Frameworks */,
+				9CE2F606FD5F8D63BEDAC88D /* Pods_Jamulator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,12 +89,12 @@
 		3621D2471F2FA19A00E07518 = {
 			isa = PBXGroup;
 			children = (
-				363B17901F5781A30067AB52 /* FluidR3_GM.sf2 */,
-				36DA47301F50C6A300AE58EE /* AudioKit.framework */,
+				DA99ABAC238D2FE300DD25D9 /* piano.sf2 */,
 				3621D29A1F3005CE00E07518 /* Media */,
 				3621D2521F2FA19A00E07518 /* Jamulator */,
 				3621D2511F2FA19A00E07518 /* Products */,
 				3621D2651F2FB11900E07518 /* Frameworks */,
+				D6FC7B86F03577959E12045D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +132,7 @@
 			children = (
 				3621D2661F2FB11900E07518 /* CoreAudio.framework */,
 				3621D2671F2FB11900E07518 /* CoreMIDI.framework */,
+				1EB679D57050E3192BB4D0D3 /* Pods_Jamulator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,6 +142,15 @@
 			children = (
 			);
 			name = Media;
+			sourceTree = "<group>";
+		};
+		D6FC7B86F03577959E12045D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DF251361E9B9103D89D12BC /* Pods-Jamulator.debug.xcconfig */,
+				10E9F9B6A128E49E4006BB7C /* Pods-Jamulator.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +164,6 @@
 				3621D24C1F2FA19A00E07518 /* Sources */,
 				3621D24D1F2FA19A00E07518 /* Frameworks */,
 				3621D24E1F2FA19A00E07518 /* Resources */,
-				F2ECC297598EEE84FF7CDA60 /* [CP] Embed Pods Frameworks */,
-				008D1C48F3BD33382B4627E0 /* [CP] Copy Pods Resources */,
 				369035711F4228BF00E72EDB /* Embed Frameworks */,
 				369035721F422EFF00E72EDB /* CopyFiles */,
 				369035771F4234DE00E72EDB /* ShellScript */,
@@ -200,6 +208,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -218,8 +227,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				363B17911F5781A30067AB52 /* FluidR3_GM.sf2 in Resources */,
 				3621D25E1F2FA19A00E07518 /* LaunchScreen.storyboard in Resources */,
+				DA99ABAD238D2FE300DD25D9 /* piano.sf2 in Resources */,
 				3621D25B1F2FA19A00E07518 /* Assets.xcassets in Resources */,
 				3621D2591F2FA19A00E07518 /* Main.storyboard in Resources */,
 			);
@@ -228,22 +237,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		008D1C48F3BD33382B4627E0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "
-";
-			showEnvVarsInLog = 0;
-		};
 		369035771F4234DE00E72EDB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,29 +256,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jamulator-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
-			showEnvVarsInLog = 0;
-		};
-		F2ECC297598EEE84FF7CDA60 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "
-";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -446,6 +426,7 @@
 		};
 		3621D2631F2FA19A00E07518 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DF251361E9B9103D89D12BC /* Pods-Jamulator.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -465,12 +446,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		3621D2641F2FA19A00E07518 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10E9F9B6A128E49E4006BB7C /* Pods-Jamulator.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -489,7 +471,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
